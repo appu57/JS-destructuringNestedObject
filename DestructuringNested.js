@@ -45,3 +45,26 @@ let {x , y}={x:2};
 console.log("i" , x);//2
 console.log("j" , y);//undefined
 "###############################################################################################################################################################"
+
+let arr = [1,2,3,4];
+const [first,,,fourth] = arr; //, skips 2 and 3
+console.log(fourth);//4
+
+"###############################################################################################################################################################"
+//In above example we are destructuring only 1 and 4 and we skip 2 and 3 , now if arr has 100 element and you want to get 99th use object destructor method
+
+const {2:second,3:third} =arr; //where 2 and 3 are index
+console.log(third);//4
+
+
+"###############################################################################################################################################################"
+
+const numbers = [1,2,3,4];
+const [z] = numbers;
+console.log("the value ",z);//1
+
+"###############################################################################################################################################################"
+//[] array destructing
+//{} object destructuring
+
+//array can use both [] and {} , whereas object can use only {}
